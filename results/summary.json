@@ -1,0 +1,696 @@
+{
+  "groups": {
+    "first policy, MuJoCo, no pushes": {
+      "files": [
+        "measure/my_motion_256.npz",
+        "motrix/my_motion_1024_mujoco.npz",
+        "motrix/my_motion_2048_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-19_22-23-32_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 3328,
+      "whole_clip_without_reset": 3211,
+      "whole_clip_without_reset_percent": 96.48,
+      "whole_clip_without_reset_wilson95_percent": [
+        95.8,
+        97.06
+      ],
+      "robots_first_reset_before_2.5s": 110,
+      "robots_first_reset_from_2.5s": 7,
+      "compared_robot_steps": 4206473,
+      "mean_body_position_error_cm": 3.545,
+      "mean_torso_distance_cm": 9.05,
+      "mean_torso_horizontal_distance_cm": 8.942,
+      "mean_torso_height_error_cm": 1.011,
+      "mean_torso_orientation_error_deg": 5.703,
+      "mean_joint_angle_error_deg": 6.241
+    },
+    "first policy, MotrixSim, no pushes": {
+      "files": [
+        "motrix/my_motion_256.npz",
+        "motrix/my_motion_1024_motrix.npz",
+        "motrix/my_motion_2048_motrix.npz"
+      ],
+      "runs": [
+        "2026-11-19_22-23-32_mujoco"
+      ],
+      "simulators": [
+        "motrix"
+      ],
+      "robots": 3328,
+      "whole_clip_without_reset": 3170,
+      "whole_clip_without_reset_percent": 95.25,
+      "whole_clip_without_reset_wilson95_percent": [
+        94.48,
+        95.92
+      ],
+      "robots_first_reset_before_2.5s": 127,
+      "robots_first_reset_from_2.5s": 31,
+      "compared_robot_steps": 4206428,
+      "mean_body_position_error_cm": 3.629,
+      "mean_torso_distance_cm": 9.329,
+      "mean_torso_horizontal_distance_cm": 9.22,
+      "mean_torso_height_error_cm": 1.016,
+      "mean_torso_orientation_error_deg": 6.29,
+      "mean_joint_angle_error_deg": 6.283
+    },
+    "push-trained policy, MuJoCo, no pushes": {
+      "files": [
+        "pushtrained/nopush_256_mujoco.npz",
+        "pushtrained/nopush_1024_mujoco.npz",
+        "pushtrained/nopush_2048_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-20_11-36-58_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 3328,
+      "whole_clip_without_reset": 3279,
+      "whole_clip_without_reset_percent": 98.53,
+      "whole_clip_without_reset_wilson95_percent": [
+        98.06,
+        98.88
+      ],
+      "robots_first_reset_before_2.5s": 39,
+      "robots_first_reset_from_2.5s": 10,
+      "compared_robot_steps": 4206542,
+      "mean_body_position_error_cm": 4.1,
+      "mean_torso_distance_cm": 12.86,
+      "mean_torso_horizontal_distance_cm": 12.75,
+      "mean_torso_height_error_cm": 1.152,
+      "mean_torso_orientation_error_deg": 5.826,
+      "mean_joint_angle_error_deg": 6.673
+    },
+    "push-trained policy, MotrixSim, no pushes": {
+      "files": [
+        "pushtrained/nopush_256_motrix.npz",
+        "pushtrained/nopush_1024_motrix.npz",
+        "pushtrained/nopush_2048_motrix.npz"
+      ],
+      "runs": [
+        "2026-11-20_11-36-58_mujoco"
+      ],
+      "simulators": [
+        "motrix"
+      ],
+      "robots": 3328,
+      "whole_clip_without_reset": 3233,
+      "whole_clip_without_reset_percent": 97.15,
+      "whole_clip_without_reset_wilson95_percent": [
+        96.52,
+        97.66
+      ],
+      "robots_first_reset_before_2.5s": 66,
+      "robots_first_reset_from_2.5s": 29,
+      "compared_robot_steps": 4206492,
+      "mean_body_position_error_cm": 4.105,
+      "mean_torso_distance_cm": 13.239,
+      "mean_torso_horizontal_distance_cm": 13.131,
+      "mean_torso_height_error_cm": 1.127,
+      "mean_torso_orientation_error_deg": 6.276,
+      "mean_joint_angle_error_deg": 6.745
+    },
+    "first policy, quarter-strength pushes": {
+      "files": [
+        "push/my_motion_push_0.25.npz"
+      ],
+      "runs": [
+        "2026-11-19_22-23-32_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 977,
+      "whole_clip_without_reset_percent": 95.41,
+      "whole_clip_without_reset_wilson95_percent": [
+        93.95,
+        96.53
+      ],
+      "robots_first_reset_before_2.5s": 41,
+      "robots_first_reset_from_2.5s": 6,
+      "compared_robot_steps": 1294287,
+      "mean_body_position_error_cm": 3.539,
+      "mean_torso_distance_cm": 9.265,
+      "mean_torso_horizontal_distance_cm": 9.158,
+      "mean_torso_height_error_cm": 1.012,
+      "mean_torso_orientation_error_deg": 5.659,
+      "mean_joint_angle_error_deg": 6.259,
+      "pushes": {
+        "count": 12398,
+        "per_robot": 12.11,
+        "followed_by_reset_within_2s": 11,
+        "followed_by_reset_percent": 0.09,
+        "during one leg": {
+          "count": 2575,
+          "followed_by_reset": 2,
+          "followed_by_reset_percent": 0.08
+        }
+      }
+    },
+    "first policy, half-strength pushes": {
+      "files": [
+        "push/my_motion_push_0.5.npz"
+      ],
+      "runs": [
+        "2026-11-19_22-23-32_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 925,
+      "whole_clip_without_reset_percent": 90.33,
+      "whole_clip_without_reset_wilson95_percent": [
+        88.37,
+        91.99
+      ],
+      "robots_first_reset_before_2.5s": 45,
+      "robots_first_reset_from_2.5s": 54,
+      "compared_robot_steps": 1294230,
+      "mean_body_position_error_cm": 3.663,
+      "mean_torso_distance_cm": 10.973,
+      "mean_torso_horizontal_distance_cm": 10.877,
+      "mean_torso_height_error_cm": 1.032,
+      "mean_torso_orientation_error_deg": 5.855,
+      "mean_joint_angle_error_deg": 6.347,
+      "pushes": {
+        "count": 12342,
+        "per_robot": 12.05,
+        "followed_by_reset_within_2s": 64,
+        "followed_by_reset_percent": 0.52,
+        "during one leg": {
+          "count": 2512,
+          "followed_by_reset": 45,
+          "followed_by_reset_percent": 1.79
+        }
+      }
+    },
+    "first policy, three-quarter-strength pushes": {
+      "files": [
+        "push/my_motion_push_0.75.npz"
+      ],
+      "runs": [
+        "2026-11-19_22-23-32_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 755,
+      "whole_clip_without_reset_percent": 73.73,
+      "whole_clip_without_reset_wilson95_percent": [
+        70.95,
+        76.33
+      ],
+      "robots_first_reset_before_2.5s": 38,
+      "robots_first_reset_from_2.5s": 231,
+      "compared_robot_steps": 1294038,
+      "mean_body_position_error_cm": 3.923,
+      "mean_torso_distance_cm": 14.338,
+      "mean_torso_horizontal_distance_cm": 14.254,
+      "mean_torso_height_error_cm": 1.082,
+      "mean_torso_orientation_error_deg": 6.298,
+      "mean_joint_angle_error_deg": 6.544,
+      "pushes": {
+        "count": 12274,
+        "per_robot": 11.99,
+        "followed_by_reset_within_2s": 251,
+        "followed_by_reset_percent": 2.04,
+        "during one leg": {
+          "count": 2255,
+          "followed_by_reset": 158,
+          "followed_by_reset_percent": 7.01
+        }
+      }
+    },
+    "first policy, standard pushes": {
+      "files": [
+        "push/my_motion_push_1.npz"
+      ],
+      "runs": [
+        "2026-11-19_22-23-32_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 525,
+      "whole_clip_without_reset_percent": 51.27,
+      "whole_clip_without_reset_wilson95_percent": [
+        48.21,
+        54.32
+      ],
+      "robots_first_reset_before_2.5s": 36,
+      "robots_first_reset_from_2.5s": 463,
+      "compared_robot_steps": 1293736,
+      "mean_body_position_error_cm": 4.28,
+      "mean_torso_distance_cm": 18.606,
+      "mean_torso_horizontal_distance_cm": 18.527,
+      "mean_torso_height_error_cm": 1.152,
+      "mean_torso_orientation_error_deg": 6.97,
+      "mean_joint_angle_error_deg": 6.823,
+      "pushes": {
+        "count": 12154,
+        "per_robot": 11.87,
+        "followed_by_reset_within_2s": 542,
+        "followed_by_reset_percent": 4.46,
+        "during one leg": {
+          "count": 1775,
+          "followed_by_reset": 216,
+          "followed_by_reset_percent": 12.17
+        }
+      }
+    },
+    "first policy, 1.5x pushes": {
+      "files": [
+        "push/my_motion_push_1.5.npz"
+      ],
+      "runs": [
+        "2026-11-19_22-23-32_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 121,
+      "whole_clip_without_reset_percent": 11.82,
+      "whole_clip_without_reset_wilson95_percent": [
+        9.98,
+        13.94
+      ],
+      "robots_first_reset_before_2.5s": 68,
+      "robots_first_reset_from_2.5s": 835,
+      "compared_robot_steps": 1292560,
+      "mean_body_position_error_cm": 5.106,
+      "mean_torso_distance_cm": 25.538,
+      "mean_torso_horizontal_distance_cm": 25.449,
+      "mean_torso_height_error_cm": 1.369,
+      "mean_torso_orientation_error_deg": 8.305,
+      "mean_joint_angle_error_deg": 7.58,
+      "pushes": {
+        "count": 11632,
+        "per_robot": 11.36,
+        "followed_by_reset_within_2s": 1658,
+        "followed_by_reset_percent": 14.25,
+        "during one leg": {
+          "count": 691,
+          "followed_by_reset": 184,
+          "followed_by_reset_percent": 26.63
+        }
+      }
+    },
+    "first policy, double pushes": {
+      "files": [
+        "push/my_motion_push_2.npz"
+      ],
+      "runs": [
+        "2026-11-19_22-23-32_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 27,
+      "whole_clip_without_reset_percent": 2.64,
+      "whole_clip_without_reset_wilson95_percent": [
+        1.82,
+        3.81
+      ],
+      "robots_first_reset_before_2.5s": 95,
+      "robots_first_reset_from_2.5s": 902,
+      "compared_robot_steps": 1291334,
+      "mean_body_position_error_cm": 5.728,
+      "mean_torso_distance_cm": 29.339,
+      "mean_torso_horizontal_distance_cm": 29.229,
+      "mean_torso_height_error_cm": 1.6,
+      "mean_torso_orientation_error_deg": 9.065,
+      "mean_joint_angle_error_deg": 8.187,
+      "pushes": {
+        "count": 11167,
+        "per_robot": 10.91,
+        "followed_by_reset_within_2s": 2810,
+        "followed_by_reset_percent": 25.16,
+        "during one leg": {
+          "count": 218,
+          "followed_by_reset": 88,
+          "followed_by_reset_percent": 40.37
+        }
+      }
+    },
+    "push-trained policy, quarter-strength pushes": {
+      "files": [
+        "pushtrained/push_0.25_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-20_11-36-58_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 1006,
+      "whole_clip_without_reset_percent": 98.24,
+      "whole_clip_without_reset_wilson95_percent": [
+        97.24,
+        98.89
+      ],
+      "robots_first_reset_before_2.5s": 16,
+      "robots_first_reset_from_2.5s": 2,
+      "compared_robot_steps": 1294318,
+      "mean_body_position_error_cm": 4.124,
+      "mean_torso_distance_cm": 13.211,
+      "mean_torso_horizontal_distance_cm": 13.105,
+      "mean_torso_height_error_cm": 1.161,
+      "mean_torso_orientation_error_deg": 5.784,
+      "mean_joint_angle_error_deg": 6.675,
+      "pushes": {
+        "count": 12396,
+        "per_robot": 12.11,
+        "followed_by_reset_within_2s": 5,
+        "followed_by_reset_percent": 0.04,
+        "during one leg": {
+          "count": 2577,
+          "followed_by_reset": 0,
+          "followed_by_reset_percent": 0.0
+        }
+      }
+    },
+    "push-trained policy, half-strength pushes": {
+      "files": [
+        "pushtrained/push_0.5_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-20_11-36-58_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 1010,
+      "whole_clip_without_reset_percent": 98.63,
+      "whole_clip_without_reset_wilson95_percent": [
+        97.72,
+        99.18
+      ],
+      "robots_first_reset_before_2.5s": 10,
+      "robots_first_reset_from_2.5s": 4,
+      "compared_robot_steps": 1294322,
+      "mean_body_position_error_cm": 4.029,
+      "mean_torso_distance_cm": 14.65,
+      "mean_torso_horizontal_distance_cm": 14.56,
+      "mean_torso_height_error_cm": 1.146,
+      "mean_torso_orientation_error_deg": 5.507,
+      "mean_joint_angle_error_deg": 6.694,
+      "pushes": {
+        "count": 12404,
+        "per_robot": 12.11,
+        "followed_by_reset_within_2s": 5,
+        "followed_by_reset_percent": 0.04,
+        "during one leg": {
+          "count": 2575,
+          "followed_by_reset": 2,
+          "followed_by_reset_percent": 0.08
+        }
+      }
+    },
+    "push-trained policy, three-quarter-strength pushes": {
+      "files": [
+        "pushtrained/push_0.75_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-20_11-36-58_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 992,
+      "whole_clip_without_reset_percent": 96.88,
+      "whole_clip_without_reset_wilson95_percent": [
+        95.62,
+        97.78
+      ],
+      "robots_first_reset_before_2.5s": 15,
+      "robots_first_reset_from_2.5s": 17,
+      "compared_robot_steps": 1294304,
+      "mean_body_position_error_cm": 4.043,
+      "mean_torso_distance_cm": 17.259,
+      "mean_torso_horizontal_distance_cm": 17.182,
+      "mean_torso_height_error_cm": 1.146,
+      "mean_torso_orientation_error_deg": 5.475,
+      "mean_joint_angle_error_deg": 6.777,
+      "pushes": {
+        "count": 12413,
+        "per_robot": 12.12,
+        "followed_by_reset_within_2s": 19,
+        "followed_by_reset_percent": 0.15,
+        "during one leg": {
+          "count": 2588,
+          "followed_by_reset": 7,
+          "followed_by_reset_percent": 0.27
+        }
+      }
+    },
+    "push-trained policy, standard pushes": {
+      "files": [
+        "pushtrained/push_1_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-20_11-36-58_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 933,
+      "whole_clip_without_reset_percent": 91.11,
+      "whole_clip_without_reset_wilson95_percent": [
+        89.21,
+        92.71
+      ],
+      "robots_first_reset_before_2.5s": 6,
+      "robots_first_reset_from_2.5s": 85,
+      "compared_robot_steps": 1294241,
+      "mean_body_position_error_cm": 4.211,
+      "mean_torso_distance_cm": 19.9,
+      "mean_torso_horizontal_distance_cm": 19.826,
+      "mean_torso_height_error_cm": 1.185,
+      "mean_torso_orientation_error_deg": 5.69,
+      "mean_joint_angle_error_deg": 6.907,
+      "pushes": {
+        "count": 12383,
+        "per_robot": 12.09,
+        "followed_by_reset_within_2s": 84,
+        "followed_by_reset_percent": 0.68,
+        "during one leg": {
+          "count": 2476,
+          "followed_by_reset": 25,
+          "followed_by_reset_percent": 1.01
+        }
+      }
+    },
+    "push-trained policy, 1.5x pushes": {
+      "files": [
+        "pushtrained/push_1.5_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-20_11-36-58_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 606,
+      "whole_clip_without_reset_percent": 59.18,
+      "whole_clip_without_reset_wilson95_percent": [
+        56.14,
+        62.15
+      ],
+      "robots_first_reset_before_2.5s": 29,
+      "robots_first_reset_from_2.5s": 389,
+      "compared_robot_steps": 1293862,
+      "mean_body_position_error_cm": 4.757,
+      "mean_torso_distance_cm": 27.844,
+      "mean_torso_horizontal_distance_cm": 27.77,
+      "mean_torso_height_error_cm": 1.341,
+      "mean_torso_orientation_error_deg": 6.643,
+      "mean_joint_angle_error_deg": 7.247,
+      "pushes": {
+        "count": 12247,
+        "per_robot": 11.96,
+        "followed_by_reset_within_2s": 438,
+        "followed_by_reset_percent": 3.58,
+        "during one leg": {
+          "count": 1854,
+          "followed_by_reset": 144,
+          "followed_by_reset_percent": 7.77
+        }
+      }
+    },
+    "push-trained policy, double pushes": {
+      "files": [
+        "pushtrained/push_2_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-20_11-36-58_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 298,
+      "whole_clip_without_reset_percent": 29.1,
+      "whole_clip_without_reset_wilson95_percent": [
+        26.4,
+        31.96
+      ],
+      "robots_first_reset_before_2.5s": 39,
+      "robots_first_reset_from_2.5s": 687,
+      "compared_robot_steps": 1293350,
+      "mean_body_position_error_cm": 5.283,
+      "mean_torso_distance_cm": 34.411,
+      "mean_torso_horizontal_distance_cm": 34.327,
+      "mean_torso_height_error_cm": 1.522,
+      "mean_torso_orientation_error_deg": 7.525,
+      "mean_joint_angle_error_deg": 7.614,
+      "pushes": {
+        "count": 12067,
+        "per_robot": 11.78,
+        "followed_by_reset_within_2s": 951,
+        "followed_by_reset_percent": 7.88,
+        "during one leg": {
+          "count": 1158,
+          "followed_by_reset": 226,
+          "followed_by_reset_percent": 19.52
+        }
+      }
+    },
+    "UniLab dance policy, MuJoCo, no pushes": {
+      "files": [
+        "measure/dance_256.npz",
+        "motrix/dance_1024_mujoco.npz"
+      ],
+      "runs": [
+        "2026-11-19_12-01-49_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1280,
+      "whole_clip_without_reset": 1220,
+      "whole_clip_without_reset_percent": 95.31,
+      "whole_clip_without_reset_wilson95_percent": [
+        94.01,
+        96.34
+      ],
+      "robots_first_reset_before_2.5s": 35,
+      "robots_first_reset_from_2.5s": 25,
+      "compared_robot_steps": 1112259,
+      "mean_body_position_error_cm": 4.556,
+      "mean_torso_distance_cm": 11.755,
+      "mean_torso_horizontal_distance_cm": 11.63,
+      "mean_torso_height_error_cm": 1.147,
+      "mean_torso_orientation_error_deg": 5.346,
+      "mean_joint_angle_error_deg": 6.899
+    },
+    "UniLab dance policy, MotrixSim, no pushes": {
+      "files": [
+        "motrix/dance_1024_motrix.npz"
+      ],
+      "runs": [
+        "2026-11-19_12-01-49_mujoco"
+      ],
+      "simulators": [
+        "motrix"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 940,
+      "whole_clip_without_reset_percent": 91.8,
+      "whole_clip_without_reset_wilson95_percent": [
+        89.96,
+        93.33
+      ],
+      "robots_first_reset_before_2.5s": 36,
+      "robots_first_reset_from_2.5s": 48,
+      "compared_robot_steps": 889767,
+      "mean_body_position_error_cm": 4.614,
+      "mean_torso_distance_cm": 13.192,
+      "mean_torso_horizontal_distance_cm": 13.078,
+      "mean_torso_height_error_cm": 1.196,
+      "mean_torso_orientation_error_deg": 5.603,
+      "mean_joint_angle_error_deg": 6.961
+    },
+    "UniLab dance policy, standard pushes": {
+      "files": [
+        "push/dance_push_1.npz"
+      ],
+      "runs": [
+        "2026-11-19_12-01-49_mujoco"
+      ],
+      "simulators": [
+        "mujoco"
+      ],
+      "robots": 1024,
+      "whole_clip_without_reset": 910,
+      "whole_clip_without_reset_percent": 88.87,
+      "whole_clip_without_reset_wilson95_percent": [
+        86.79,
+        90.65
+      ],
+      "robots_first_reset_before_2.5s": 32,
+      "robots_first_reset_from_2.5s": 82,
+      "compared_robot_steps": 889730,
+      "mean_body_position_error_cm": 4.851,
+      "mean_torso_distance_cm": 16.177,
+      "mean_torso_horizontal_distance_cm": 16.059,
+      "mean_torso_height_error_cm": 1.267,
+      "mean_torso_orientation_error_deg": 5.921,
+      "mean_joint_angle_error_deg": 7.113,
+      "pushes": {
+        "count": 8290,
+        "per_robot": 8.1,
+        "followed_by_reset_within_2s": 86,
+        "followed_by_reset_percent": 1.04,
+        "during one leg": {
+          "count": 0,
+          "followed_by_reset": 0,
+          "followed_by_reset_percent": null
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "first policy, MuJoCo, no pushes vs push-trained policy, MuJoCo, no pushes": {
+      "fisher_p_whole_clip_without_reset": 9.41e-08,
+      "fisher_p_robots_first_reset_before_2.5s": 3.42e-09,
+      "fisher_p_robots_first_reset_from_2.5s": 0.629
+    },
+    "first policy, MotrixSim, no pushes vs push-trained policy, MotrixSim, no pushes": {
+      "fisher_p_whole_clip_without_reset": 6.54e-05,
+      "fisher_p_robots_first_reset_before_2.5s": 1e-05,
+      "fisher_p_robots_first_reset_from_2.5s": 0.897
+    },
+    "first policy, MuJoCo, no pushes vs first policy, MotrixSim, no pushes": {
+      "fisher_p_whole_clip_without_reset": 0.0136,
+      "fisher_p_robots_first_reset_before_2.5s": 0.29,
+      "fisher_p_robots_first_reset_from_2.5s": 0.000111
+    },
+    "push-trained policy, MuJoCo, no pushes vs push-trained policy, MotrixSim, no pushes": {
+      "fisher_p_whole_clip_without_reset": 0.000133,
+      "fisher_p_robots_first_reset_before_2.5s": 0.0102,
+      "fisher_p_robots_first_reset_from_2.5s": 0.00329
+    },
+    "first policy, standard pushes vs push-trained policy, standard pushes": {
+      "fisher_p_whole_clip_without_reset": 3.47e-94,
+      "fisher_p_robots_first_reset_before_2.5s": 2.27e-06,
+      "fisher_p_robots_first_reset_from_2.5s": 8.3e-85
+    }
+  }
+}

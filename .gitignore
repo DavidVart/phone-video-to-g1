@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Source videos and GVHMR results describe a real person; keep them out of the repository.
+*.mov
+hmr4d_results.pt
